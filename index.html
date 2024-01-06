@@ -4,26 +4,55 @@
     <head>
 	<meta charset="UTF-8">
 	<title>Rock, Paper, Scissors</title>
+	<link rel="stylesheet" href="style.css">
 	<script src="rock-paper-scissors.js" defer></script>
     </head>
 
     <body>
+	<header>
+	    <h1>Rock Paper Scissors</h1>
+	</header>
+
 	<main>
-	    <div class="buttons">
-		<button class="rock">
-		    <img width="100px" src="rock.svg" alt="Image of a rock">
-		</button>
-		<button class="paper">
-		    <img width="100px" src="paper.svg" alt="Image of a paper">
-		</button>
-		<button class="scissor">
-		    <img width="100px" src="scissor.svg" alt="Image of a scissor">
-		</button>
+	    <div class="scoreBoard see">
+		<h2></h2>
+		<h3 class="score"></h3>
+		<h4 class="result"></h3>
 	    </div>
 
-	    <div>
-		<p class="results">
-		</p>
+	    <div class="computerChoice choice see">
+		<div class="choiceImg">
+		    <img width="100px" src="" alt="">
+		</div>
+		<div class="wins">
+		    <h3 class="see">Escolha do computador: </h3>
+		    <h4></h4>
+		</div>
+	    </div>
+
+	    <div class="userChoice choice see">
+		<div class="choiceImg">
+		    <img width="100px" src="" alt="">
+		</div>
+		<div class="wins">
+		    <h3 class="see">Escolha do usuário: </h3>
+		    <h4></h4>
+		</div>
+	    </div>
+
+	    <div class="game">
+		<h2>Pedra papel ou tesoura?</h2>
+		<div class="buttons">
+		    <button class="rock">
+			<img width="100px" src="images/pedra.svg" alt="Image of a rock">
+		    </button>
+		    <button class="paper">
+			<img width="100px" src="images/papel.svg" alt="Image of a paper">
+		    </button>
+		    <button class="scissor">
+			<img width="100px" src="images/tesoura.svg" alt="Image of a scissor">
+		    </button>
+		</div>
 	    </div>
 	</main>
     </body>
