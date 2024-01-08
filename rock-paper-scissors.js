@@ -1,9 +1,9 @@
 buttonRock = document.querySelector(".rock");
 buttonPaper = document.querySelector(".paper");
 buttonScissor = document.querySelector(".scissor");
-textComputerChoice = document.querySelector(".computerChoice .wins h4");
+textComputerChoice = document.querySelector(".computerChoice h3");
 imgComputerChoice = document.querySelector(".computerChoice .choiceImg img");
-changeUserChoice = document.querySelector(".userChoice .wins h4");
+changeUserChoice = document.querySelector(".userChoice h3");
 imgUserChoice = document.querySelector(".userChoice .choiceImg img");
 h3Results = document.querySelector(".scoreBoard .result");
 ScoreBoard= document.querySelector(".scoreBoard .score");

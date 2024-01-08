@@ -18,21 +18,22 @@ header {
     border-color: #E5E3E2ff;
 }
 
+header h1 {
+    margin: 10px;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
-    background-color: white;
-    margin: 50px auto;
-    padding-top: 3vw;
-    padding-right: 3vw;
-    padding-bottom: 3vw;
-    padding-left: 3vw;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #E5E3E2ff;
-    border-radius: 15px;
+    width: 600px;
+    max-width: 80%;
+    margin: 10px auto;
+    padding-top: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    gap: 20px;
 }
 
 .scoreBoard {
@@ -42,14 +43,92 @@ main {
 }
 
 .scoreBoard h2, .scoreBoard h3, .scoreBoard h4 {
-    margin: 10px;
+    margin: 5px;
+}
+
+.gameView {
+    display: flex;
+    gap: 40px;
 }
 
 .choice {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 150px;
+    padding: 5px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E5E3E2ff;
+    border-radius: 15px;
+}
+
+.choice h3, .choice h4, .game h2 {
+    margin: 10px;
 }
 
 .see {
     display: none;
 }
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 620px) {
+    header {
+	font-size: 0.9rem;
+    }
+
+    h2 {
+	font-size: 1.2rem;
+    }
+
+    main {
+	margin: 5px auto;
+	max-width: 90%;
+    }
+
+    img {
+	width: 60px;
+    }
+
+    .gameView {
+	flex-direction: column-reverse;
+	gap: 10px;
+    }
+
+    .gameView img {
+	width: 80px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #C9D1D9;
+        background-color: #0D1117;
+    }
+
+    header, footer {
+	border-color: rgba(91, 91, 92, 0.10);
+        background-color: #12151b;
+    }
+
+    .choice, button {
+        border: 0.01rem solid rgba(91, 91, 92, 0.10);
+        background-color: #12151b;
+    }
+    
+    img {
+	filter: invert(100%);
+    }
+}
+
